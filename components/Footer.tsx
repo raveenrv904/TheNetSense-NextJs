@@ -17,6 +17,7 @@ const Footer = () => {
           src={LogoBlack}
           alt="Footer Logo"
           className="w-48 lg:w-[353px]"
+          priority
         />
 
         <div className="mt-4">
@@ -35,7 +36,7 @@ const Footer = () => {
               const { icon: Icon } = item;
               return (
                 <Link key={index} href={item.link}>
-                  <Icon className="w-6 h-6 md:w-7 md:h-7 text-gray-600 hover:text-blue-600 transition-colors duration-200" />
+                  <Icon className="w-6 h-6 md:w-7 md:h-7 text-gray-600 hover:text-primary transition-colors duration-200" />
                 </Link>
               );
             })}

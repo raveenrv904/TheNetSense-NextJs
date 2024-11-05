@@ -62,6 +62,10 @@ const config = {
           to: { height: "0" },
         },
       },
+      boxShadow: {
+        custom: "0px 4px 100px 0px #00000020",
+        customHover: "0px 4px 100px 0px #00000030",
+      },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
