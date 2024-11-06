@@ -8,7 +8,7 @@ import ContactMiddle from "./assets/247.gif";
 
 const Contact = () => {
   return (
-    <section className="w-full px-4 py-20 md:px-8 lg:px-12 h-auto my-10">
+    <section className="w-full px-4 py-20 md:px-8 lg:px-12 h-auto my-10 mt-0">
       <TitleSection
         title="contact"
         description="Comprehensive solutions to elevate your online presence and drive business growth."
