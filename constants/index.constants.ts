@@ -103,3 +103,14 @@ export const FAQS = [
       "Getting started is easy! Reach out to us via our contact page or email, and we'll set up a consultation to discuss your needs, goals, and the best options for your business.",
   },
 ];
+
+export const ABOUTFEATURES1 = [
+  "Lorem ipsum dolor sit amet",
+  "Lorem ipsum dolor sit amet",
+  "Lorem ipsum dolor sit amet",
+];
+export const ABOUTFEATURES2 = [
+  "Lorem ipsum dolor sit amet",
+  "Lorem ipsum dolor sit amet",
+  "Lorem ipsum dolor sit amet",
+];
