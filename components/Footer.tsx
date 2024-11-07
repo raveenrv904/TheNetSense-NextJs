@@ -10,7 +10,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <section className="flex flex-col lg:flex-row lg:justify-between gap-10 px-4 lg:px-20 py-10 bg-gray-50">
+    <footer className="flex flex-col lg:flex-row lg:justify-between gap-10 px-4 lg:px-20 py-10 bg-gray-50">
       {/* Logo and Contact Info */}
       <div className="flex-1 flex flex-col items-start">
         <Image
@@ -75,7 +75,7 @@ const Footer = () => {
           ))}
         </div>
       </div>
-    </section>
+    </footer>
   );
 };
 

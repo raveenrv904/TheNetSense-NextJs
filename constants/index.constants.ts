@@ -137,3 +137,18 @@ export const SPECIALSECTION = [
     title: "Hard Workers",
   },
 ];
+
+export const NAVLINKS = [
+  {
+    title: "About Us",
+    link: "/#about-us",
+  },
+  {
+    title: "Services",
+    link: "/#services",
+  },
+  {
+    title: "Faqs",
+    link: "/#faqs",
+  },
+];
