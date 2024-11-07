@@ -1,4 +1,4 @@
-import { Instagram, Facebook, X } from "lucide-react";
+import { Instagram, Facebook, X, User } from "lucide-react";
 
 export const SOCIALMEDIA = [
   {
@@ -113,4 +113,27 @@ export const ABOUTFEATURES2 = [
   "Lorem ipsum dolor sit amet",
   "Lorem ipsum dolor sit amet",
   "Lorem ipsum dolor sit amet",
+];
+
+export const SPECIALSECTION = [
+  {
+    Icon: User,
+    count: 7,
+    title: "Happy Client",
+  },
+  {
+    Icon: User,
+    count: 10,
+    title: "Projects",
+  },
+  {
+    Icon: User,
+    count: 720,
+    title: "Hours Of Support",
+  },
+  {
+    Icon: User,
+    count: 5,
+    title: "Hard Workers",
+  },
 ];
