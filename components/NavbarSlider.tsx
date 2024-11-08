@@ -48,7 +48,7 @@ const NavbarSlider = () => {
               </div>
 
               <div className="mt-8">
-                <Link href={"https://wa.link/ne8f6m"}>
+                <Link href={"https://wa.me/+919092125904"}>
                   <button className="flex hover:bg-red-600 hover:shadow-customHover transition-all duration-300 ease-in-out items-center gap-1 font-semibold rounded-[4px] text-white bg-primary px-3 md:px-4 py-2 text-xs md:text-base">
                     <MessageCircle />
                     <p>Get In Touch</p>

@@ -71,7 +71,8 @@ const Hero = () => {
                 Discover More
               </Link>
               <Link
-                href={"/#contact-us"}
+                href={"https://wa.me/+919092125904"}
+                target="_blank"
                 className="border border-primary text-primary px-4 sm:px-5 py-2 sm:py-3 font-semibold tracking-wide rounded-full bg-white hover:bg-primary hover:text-white transition-all duration-200 ease-in-out"
               >
                 Get In Touch
