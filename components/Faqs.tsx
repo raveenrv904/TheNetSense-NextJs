@@ -12,7 +12,7 @@ import TitleSection from "./TitleSection";
 
 const Faqs = () => {
   return (
-    <div>
+    <section id="faqs">
       <TitleSection
         title="FAQS"
         description="Comprehensive solutions to elevate your online presence and drive business growth."
@@ -48,7 +48,7 @@ const Faqs = () => {
           );
         })}
       </div>
-    </div>
+    </section>
   );
 };
 

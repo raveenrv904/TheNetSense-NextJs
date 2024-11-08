@@ -11,6 +11,7 @@ import ContactMiddle from "./assets/247.gif";
 const Contact = () => {
   return (
     <motion.section
+      id="contact"
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
@@ -50,6 +51,7 @@ const Contact = () => {
               height={100}
               alt="logo"
               className="w-full h-full"
+              priority
             />
           </div>
         </motion.div>

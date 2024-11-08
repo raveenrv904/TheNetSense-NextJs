@@ -64,7 +64,7 @@ const TabContent = ({
             ))}
           </Slider>
         </div>
-        <h3 className="text-black text-lg lg:text-xl pl-3 pt-4">
+        <h3 className="text-black font-bold text-lg lg:text-xl pl-3 pt-4">
           You Will Get:
         </h3>
         <div className="flex flex-row justify-between">
@@ -88,28 +88,40 @@ const TabContent = ({
               </div>
             ))}
           </div>
-          <Image
-            className="w-64 -mt-8 lg:-mt-32 hidden md:block lg:hidden"
-            src={pricing}
-            width={100}
-            height={100}
-            alt="pricing"
-          />
+
+          {title !== "Other Enquiries" && (
+            <Image
+              className="w-64 -mt-8 lg:-mt-32 hidden md:block lg:hidden"
+              src={pricing}
+              width={100}
+              height={100}
+              alt="pricing"
+              priority
+            />
+          )}
         </div>
 
-        <div className="w-full pt-6 lg:pt-10 flex flex-col-reverse md:flex-col md:items-start lg:flex-row justify-between items-center lg:items-start pl-0 lg:pl-8 gap-4">
+        <div
+          className={`w-full pt-6 lg:pt-10 flex flex-col-reverse md:flex-col md:items-start lg:flex-row justify-between items-center lg:items-start pl-0 lg:pl-8 gap-4 ${
+            title === "Other Enquiries" && "mb-10"
+          }`}
+        >
           <Link href={link}>
             <button className="bg-primary hover:bg-red-800 transition-all duration-200 ease-in-out text-white font-semibold text-base px-6 py-3 tracking-wide rounded-full">
               Book Now
             </button>
           </Link>
-          <Image
-            className="w-64 -mt-8 lg:-mt-28 md:hidden lg:block"
-            src={pricing}
-            width={100}
-            height={100}
-            alt="pricing"
-          />
+
+          {title !== "Other Enquiries" && (
+            <Image
+              className="w-64 -mt-8 lg:-mt-28 md:hidden lg:block"
+              src={pricing}
+              width={100}
+              height={100}
+              alt="pricing"
+              priority
+            />
+          )}
         </div>
       </div>
       <div className="hidden lg:flex justify-center items-center h-full">
@@ -125,6 +137,7 @@ const TabContent = ({
                 height={100}
                 className="w-full h-full object-cover"
                 alt={`${title} Poster ${index}`}
+                priority
               />
             </div>
           ))}

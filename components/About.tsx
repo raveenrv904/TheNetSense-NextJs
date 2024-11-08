@@ -15,6 +15,7 @@ const About = () => {
 
   return (
     <section
+      id="about-us"
       ref={ref}
       className="w-full flex flex-col-reverse lg:flex-row justify-center items-center px-4 py-10 md:px-8 lg:px-12 space-y-10 lg:space-y-0 lg:space-x-6 h-auto my-10 mt-0"
     >
@@ -64,6 +65,7 @@ const About = () => {
               height={100}
               alt="Founder Profile"
               className="w-12 h-12 rounded-full shadow-customTabsTitle"
+              priority
             />
             <div>
               <h4 className="text-lg text-black font-medium">Raveen R V</h4>
@@ -94,6 +96,7 @@ const About = () => {
             width={506}
             height={350}
             alt="About Main Image"
+            priority
           />
           <div className="p-2 absolute top-1/2 -translate-y-1/2 -left-10 md:-left-16 bg-white shadow-customHover">
             <Image
@@ -102,6 +105,7 @@ const About = () => {
               height={200}
               alt="About Secondary Image"
               className="w-32 h-32 sm:w-56 sm:h-56"
+              priority
             />
           </div>
         </div>

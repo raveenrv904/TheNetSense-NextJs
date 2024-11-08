@@ -152,4 +152,8 @@ export const NAVLINKS = [
     title: "Faqs",
     link: "/#faqs",
   },
+  {
+    title: "Contact Us",
+    link: "/#contact",
+  },
 ];

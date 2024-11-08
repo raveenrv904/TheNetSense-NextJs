@@ -91,6 +91,7 @@ const Hero = () => {
               width={500}
               height={300}
               alt="TheNetSense Hero Image"
+              priority
               className="w-full max-w-[350px] sm:max-w-[350px] md:max-w-[450px] lg:max-w-[650px] object-contain"
             />
           </motion.div>

@@ -5,9 +5,18 @@ import { Tabs } from "./ui/tabs";
 import TabContent from "./TabContent";
 
 import PrisingPoster from "./assets/price.png";
-import TabPoster from "./assets/Poster.png";
 
 import { motion, useInView } from "framer-motion";
+
+// import Support from "./assets/Posters/common/support.png";
+
+// Web Development Poster
+import WPoster1 from "./assets/Posters/web/4.png";
+import WPoster2 from "./assets/Posters/web/1.png";
+import WPoster3 from "./assets/Posters/web/2.png";
+import WPoster4 from "./assets/Posters/web/3.png";
+
+import APoster from "./assets/Posters/common/app.png";
 
 export const tabs = [
   {
@@ -18,16 +27,16 @@ export const tabs = [
         <TabContent
           posters={[
             {
-              link: TabPoster,
+              link: WPoster1,
             },
             {
-              link: TabPoster,
+              link: WPoster2,
             },
             {
-              link: TabPoster,
+              link: WPoster3,
             },
             {
-              link: TabPoster,
+              link: WPoster4,
             },
           ]}
           features={[
@@ -53,7 +62,7 @@ export const tabs = [
             },
           ]}
           pricing={PrisingPoster}
-          link="https://google.com"
+          link="https://forms.gle/CDMuhzhC43F468Fs7"
           title="Web Development"
           desc="Our web development services are designed to create custom, high-performance websites that match your brand and goals. From integrated SEO to advanced analytics, we build sites that not only look great but also drive results and engage your audience."
         />
@@ -69,16 +78,16 @@ export const tabs = [
         <TabContent
           posters={[
             {
-              link: TabPoster,
+              link: APoster,
             },
             {
-              link: TabPoster,
+              link: WPoster2,
             },
             {
-              link: TabPoster,
+              link: WPoster3,
             },
             {
-              link: TabPoster,
+              link: WPoster4,
             },
           ]}
           features={[
@@ -104,7 +113,7 @@ export const tabs = [
             },
           ]}
           pricing={PrisingPoster}
-          link="https://google.com"
+          link="https://forms.gle/CDMuhzhC43F468Fs7"
           title="App Development"
           desc="Our app development services bring your ideas to life with custom, user-friendly mobile applications. We design and build apps that enhance customer engagement, streamline your business processes, and support your digital growth. From concept to launch, we’re here to make sure your app performs seamlessly."
         />
@@ -120,16 +129,13 @@ export const tabs = [
         <TabContent
           posters={[
             {
-              link: TabPoster,
+              link: WPoster2,
             },
             {
-              link: TabPoster,
+              link: WPoster3,
             },
             {
-              link: TabPoster,
-            },
-            {
-              link: TabPoster,
+              link: WPoster4,
             },
           ]}
           features={[
@@ -155,7 +161,7 @@ export const tabs = [
             },
           ]}
           pricing={PrisingPoster}
-          link="https://google.com"
+          link="https://forms.gle/CDMuhzhC43F468Fs7"
           title="Other Enquiries"
           desc="Need assistance with technical issues or updates? We’re here to help! Whether it’s resolving bugs, optimizing performance, or adding new features, our team offers reliable support to keep your digital assets running smoothly and efficiently."
         />
@@ -170,7 +176,7 @@ const Service = () => {
   const isInView = useInView(ref, { once: true });
 
   return (
-    <section>
+    <section id="services">
       <motion.div
         ref={ref}
         initial={{ opacity: 0, scale: 0.95 }}

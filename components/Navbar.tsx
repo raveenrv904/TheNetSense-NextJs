@@ -23,7 +23,7 @@ const Navbar = () => {
         className="ml-5 md:ml-10 flex-shrink-0"
       >
         <Link href={"/"}>
-          <Image src={Logo} width={150} height={30} alt="Main Logo" />
+          <Image src={Logo} width={150} height={30} alt="Main Logo" priority />
         </Link>
       </motion.div>
 
@@ -58,7 +58,7 @@ const Navbar = () => {
         transition={{ duration: 0.5, delay: 0.6 }}
         className="hidden md:flex mr-5 md:mr-10 flex-shrink-0"
       >
-        <Link href={"/#somethinf"}>
+        <Link href={"https://wa.link/ne8f6m"} target="_blank">
           <motion.button
             whileHover={{ scale: 1.05, backgroundColor: "#FF4040" }}
             className="flex hover:bg-red-600 hover:shadow-customHover transition-all duration-300 ease-in-out items-center gap-1 font-semibold rounded-[4px] text-white bg-primary px-3 md:px-4 py-2 text-xs md:text-base"

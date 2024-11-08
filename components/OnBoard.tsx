@@ -68,6 +68,7 @@ const OnBoard = () => {
           height={774}
           alt="Onboard Mobile Image"
           className="w-[400px] p-5 h-auto my-8 lg:my-0"
+          priority
         />
       </motion.div>
 
