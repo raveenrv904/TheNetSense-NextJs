@@ -3,7 +3,14 @@
 import React from "react";
 import { motion } from "framer-motion";
 import OnBoardCard from "./OnBoardCard";
-import { User } from "lucide-react";
+import {
+  Atom,
+  Cog,
+  Forklift,
+  LockKeyhole,
+  SwatchBook,
+  TvMinimalPlay,
+} from "lucide-react";
 import Image from "next/image";
 import OnBoardImage from "./assets/Onboard.png";
 
@@ -21,7 +28,7 @@ const OnBoard = () => {
           <OnBoardCard
             title="Built-in SEO Optimization"
             desc="Enhance your website's visibility with built-in SEO tools that improve rankings and help attract the right audience to grow your business."
-            Icon={User}
+            Icon={Atom}
             isLeft
           />
         </motion.div>
@@ -35,7 +42,7 @@ const OnBoard = () => {
           <OnBoardCard
             title="Google Analytics Integration"
             desc="Track your website’s performance, understand user behavior, and make data-driven decisions with seamless Google Analytics integration."
-            Icon={User}
+            Icon={Cog}
             isLeft
           />
         </motion.div>
@@ -49,7 +56,7 @@ const OnBoard = () => {
           <OnBoardCard
             title="Fast & Reliable Hosting"
             desc="Enjoy high-speed, reliable hosting with free storage and security, ensuring your site is always accessible and performs efficiently."
-            Icon={User}
+            Icon={SwatchBook}
             isLeft
           />
         </motion.div>
@@ -83,7 +90,7 @@ const OnBoard = () => {
           <OnBoardCard
             title="Free Domain Registration"
             desc="Get started with ease – our package includes free domain registration, so your brand has a professional online presence from day one."
-            Icon={User}
+            Icon={LockKeyhole}
           />
         </motion.div>
 
@@ -96,7 +103,7 @@ const OnBoard = () => {
           <OnBoardCard
             title="Cross-Platform Compatibility"
             desc="Your website will be optimized to perform seamlessly across all devices and platforms, giving your users a smooth experience everywhere."
-            Icon={User}
+            Icon={TvMinimalPlay}
           />
         </motion.div>
 
@@ -109,7 +116,7 @@ const OnBoard = () => {
           <OnBoardCard
             title="Customizable Design Options"
             desc="Stand out with fully customizable design options tailored to reflect your brand identity and meet your specific business goals."
-            Icon={User}
+            Icon={Forklift}
           />
         </motion.div>
       </div>
