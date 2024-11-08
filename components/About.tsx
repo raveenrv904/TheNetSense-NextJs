@@ -1,18 +1,30 @@
+"use client";
+
 import { ABOUTFEATURES1, ABOUTFEATURES2 } from "@/constants/index.constants";
 import { CircleCheck, Phone } from "lucide-react";
 import React from "react";
-
 import AboutMain from "./assets/about-main.png";
 import AboutSec from "./assets/about sec.png";
-
 import Image from "next/image";
-
 import Profile from "./assets/profile.jpg";
+import { motion, useInView } from "framer-motion";
 
 const About = () => {
+  const ref = React.useRef(null);
+  const isInView = useInView(ref, { once: true });
+
   return (
-    <section className="w-full flex flex-col-reverse lg:flex-row justify-center items-center px-4 py-10 md:px-8 lg:px-12 space-y-10 lg:space-y-0 lg:space-x-6 h-auto my-10 mt-0">
-      <div className="space-y-5 lg:flex-1 text-center lg:text-left lg:ml-20">
+    <section
+      ref={ref}
+      className="w-full flex flex-col-reverse lg:flex-row justify-center items-center px-4 py-10 md:px-8 lg:px-12 space-y-10 lg:space-y-0 lg:space-x-6 h-auto my-10 mt-0"
+    >
+      {/* Text and Features Section */}
+      <motion.div
+        initial={{ opacity: 0, x: -50 }}
+        animate={{ opacity: isInView ? 1 : 0, x: isInView ? 0 : -50 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        className="space-y-5 lg:flex-1 text-center lg:text-left lg:ml-20"
+      >
         <h2 className="uppercase text-[23px] text-primary font-semibold lg:text-2xl">
           More About Us
         </h2>
@@ -25,33 +37,27 @@ const About = () => {
           look great but also help you reach your goals. We’re here to make your
           digital presence shine.
         </p>
+
+        {/* Features List */}
         <div className="my-7 flex flex-col md:flex-row gap-5 justify-center lg:justify-start">
-          <div className="space-y-2">
-            {ABOUTFEATURES1.map((value, index) => (
-              <div
-                key={index}
-                className="flex items-center gap-2 justify-center lg:justify-start"
-              >
-                <CircleCheck className="text-primary" />
-                <p className="font-normal tracking-wide">{value}</p>
-              </div>
-            ))}
-          </div>
-          <div className="space-y-2">
-            {ABOUTFEATURES2.map((value, index) => (
-              <div
-                key={index}
-                className="flex items-center gap-2 justify-center lg:justify-start"
-              >
-                <CircleCheck className="text-primary" />
-                <p className="tracking-wide">{value}</p>
-              </div>
-            ))}
-          </div>
+          {[ABOUTFEATURES1, ABOUTFEATURES2].map((features, idx) => (
+            <div key={idx} className="space-y-2">
+              {features.map((value, index) => (
+                <div
+                  key={index}
+                  className="flex items-center gap-2 justify-center lg:justify-start"
+                >
+                  <CircleCheck className="text-primary" />
+                  <p className="font-normal tracking-wide">{value}</p>
+                </div>
+              ))}
+            </div>
+          ))}
         </div>
+
+        {/* Contact Information */}
         <div className="flex flex-col md:flex-row gap-10 items-center justify-center lg:justify-start">
           <div className="flex items-center gap-2">
-            {/* <CircleUser className="text-primary w-12 h-12" /> */}
             <Image
               src={Profile}
               width={100}
@@ -68,12 +74,19 @@ const About = () => {
             <Phone fill="#e03a3c" className="text-primary w-7 h-7" />
             <div>
               <p className="text-gray-400 font-medium">Call Us Anytime</p>
-              <p className="font-bold tracking-wide">+91 {process.env.PHONE}</p>
+              <p className="font-bold tracking-wide">+91 9092125904</p>
             </div>
           </div>
         </div>
-      </div>
-      <div className="lg:flex-1 !mb-10 lg:!mb-0 flex justify-center items-center">
+      </motion.div>
+
+      {/* Images Section */}
+      <motion.div
+        initial={{ opacity: 0, x: 50 }}
+        animate={{ opacity: isInView ? 1 : 0, x: isInView ? 0 : 50 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        className="lg:flex-1 !mb-10 lg:!mb-0 flex justify-center items-center"
+      >
         <div className="relative">
           <Image
             className="shadow-customHover"
@@ -92,7 +105,7 @@ const About = () => {
             />
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

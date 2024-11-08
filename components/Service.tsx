@@ -7,6 +7,8 @@ import TabContent from "./TabContent";
 import PrisingPoster from "./assets/price.png";
 import TabPoster from "./assets/Poster.png";
 
+import { motion, useInView } from "framer-motion";
+
 export const tabs = [
   {
     title: "Web Development",
@@ -163,15 +165,32 @@ export const tabs = [
 ];
 
 const Service = () => {
+  // Use the useInView hook to trigger animations when the section is in view
+  const ref = React.useRef(null);
+  const isInView = useInView(ref, { once: true });
+
   return (
     <section>
-      <TitleSection
-        title="Services"
-        description="Comprehensive solutions to elevate your online presence and drive business growth."
-      />
-      <div className="px-5 h-[86rem] sm:h-[85rem] md:h-[70rem]  lg:h-[50rem] [perspective:1000px] relative  flex flex-col max-w-5xl mx-auto w-full  items-start justify-start my-10">
+      <motion.div
+        ref={ref}
+        initial={{ opacity: 0, scale: 0.95 }}
+        animate={{ opacity: isInView ? 1 : 0, scale: isInView ? 1 : 0.95 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      >
+        <TitleSection
+          title="Services"
+          description="Comprehensive solutions to elevate your online presence and drive business growth."
+        />
+      </motion.div>
+
+      <motion.div
+        className="px-5 h-[86rem] sm:h-[85rem] md:h-[70rem] lg:h-[50rem] [perspective:1000px] relative flex flex-col max-w-5xl mx-auto w-full items-start justify-start my-10"
+        initial={{ opacity: 0, x: -50 }}
+        animate={{ opacity: isInView ? 1 : 0, x: isInView ? 0 : -50 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+      >
         <Tabs tabs={tabs} />
-      </div>
+      </motion.div>
     </section>
   );
 };

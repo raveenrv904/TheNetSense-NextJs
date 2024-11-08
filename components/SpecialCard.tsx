@@ -1,6 +1,7 @@
 import { LucideIcon } from "lucide-react";
 import React from "react";
 import CountUp from "react-countup";
+import { motion, useInView } from "framer-motion"; // Import Framer Motion
 
 type Props = {
   Icon: LucideIcon;
@@ -10,8 +11,15 @@ type Props = {
 };
 
 const SpecialCard = ({ Icon, count, title, isLast }: Props) => {
+  const ref = React.useRef(null);
+  const isInView = useInView(ref, { once: true }); // Hook to detect if in view
+
   return (
-    <div
+    <motion.div
+      ref={ref}
+      initial={{ opacity: 0, y: 30 }}
+      animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : 30 }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
       className={`flex flex-col justify-center items-center px-4 sm:px-8 md:px-16 gap-5 sm:gap-2 ${
         !isLast ? "border-r-0 sm:border-r-[5px] border-r-gray-400" : ""
       }`}
@@ -23,7 +31,7 @@ const SpecialCard = ({ Icon, count, title, isLast }: Props) => {
       <h3 className="text-[#696969] font-semibold text-[18px] sm:text-[20px] md:text-[24px] text-center sm:text-left">
         {title}
       </h3>
-    </div>
+    </motion.div>
   );
 };
 
