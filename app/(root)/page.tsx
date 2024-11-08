@@ -1,5 +1,6 @@
 import About from "@/components/About";
 import Contact from "@/components/Contact";
+import Faqs from "@/components/Faqs";
 import Hero from "@/components/Hero";
 import OnBoard from "@/components/OnBoard";
 import Service from "@/components/Service";
@@ -13,8 +14,8 @@ const Home = () => {
       <Special />
       <About />
       <Service />
+      <Faqs />
       <OnBoard />
-      {/* <Faqs /> */}
       <Contact />
     </>
   );

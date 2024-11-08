@@ -53,66 +53,67 @@ export const OURSERVICES = [
 
 export const FAQS = [
   {
-    question: "1. What services does your agency offer?",
+    question: "1. What services does TheNetSense provide?",
     answer:
-      "Our agency specializes in creating high-converting websites for businesses, including landing pages, e-commerce sites, booking systems, and custom web solutions tailored to your specific needs.",
+      "We build high-quality websites, including landing pages, e-commerce sites, booking systems, and custom solutions tailored to your business goals.",
   },
   {
-    question: "2. What makes your agency different from others?",
+    question: "2. Why should I choose TheNetSense over other agencies?",
     answer:
-      "We prioritize results by focusing on lead generation and conversion optimization. Our services include a complete package with SEO, content writing, Google Analytics integration, and technical support to ensure your website drives business growth.",
+      "We focus on helping you grow. Our sites are designed for lead generation and conversions, and we provide a full package with SEO, content writing, Google Analytics, and ongoing support to ensure your success.",
   },
   {
-    question: "5. How long does it take to complete a website project?",
+    question: "3. How long does it take to build a website?",
     answer:
-      "The typical project timeline is 4-6 weeks, depending on the complexity of the site. We also offer expedited options for clients needing quicker turnarounds.",
+      "Typically, it takes 4-6 weeks, depending on the complexity. We also offer faster options if you need a quicker turnaround.",
   },
   {
     question: "4. Do you offer a money-back guarantee?",
     answer:
-      "Yes, we provide a 100% money-back guarantee if we fail to meet our agreed-upon deadline, ensuring peace of mind for our clients.",
+      "Yes! If we miss our agreed deadline, we’ll give you a 100% refund. Your satisfaction is our priority.",
   },
   {
-    question: "5. What is included in your packed bundle?",
+    question: "5. What’s included in your package?",
     answer:
-      "Our packed bundle includes logo design, web design, responsive development, copywriting, SEO, Google Analytics setup, one month of ad management, and 720 hours of technical support.",
+      "Our package includes logo design, web design, mobile-friendly development, content writing, SEO, Google Analytics, one month of ad management, and 30 days (720 hours) of technical support.",
   },
   {
-    question: "6. Do you provide domain registration and hosting?",
+    question: "6. Do you help with domain and hosting?",
     answer:
-      "Domain registration and hosting are separate costs that clients handle, but we are happy to guide you through the setup process or recommend reliable providers.",
+      "We can guide you through domain and hosting setup or recommend providers. The costs for these are handled separately.",
   },
   {
-    question: "7. What payment structure do you follow?",
+    question: "7. What’s your payment process?",
     answer:
-      "We require an initial payment of 4999 INR to confirm the project and the remaining 5000 INR upon completion. Additional features like e-commerce or booking integrations may incur extra charges.",
+      "We ask for an initial payment of 4999 INR to start, with the remaining 5000 INR due upon completion. Extra features, like e-commerce, may have additional costs.",
   },
   {
-    question: "8. Can I request custom features for my website?",
+    question: "8. Can I ask for custom features?",
     answer:
-      "Absolutely! We specialize in custom solutions tailored to your business needs. Whether it’s e-commerce functionality, booking systems, or unique design elements, we can make it happen.",
+      "Of course! We’re all about creating custom solutions that fit your needs. Let us know what you’re looking for, and we’ll make it happen.",
   },
   {
-    question: "9. What type of support do you offer post-launch?",
+    question: "9. What kind of support do you offer after launch?",
     answer:
-      "We offer 720 hours (30 days) of technical support after launch to address any issues or questions, and additional support packages are available if you need extended maintenance.",
+      "We provide 30 days (720 hours) of technical support post-launch for any issues or questions. Additional support packages are also available if you need extended help.",
   },
   {
-    question: "10. How can I get started with your services?",
+    question: "10. How do I get started?",
     answer:
-      "Getting started is easy! Reach out to us via our contact page or email, and we'll set up a consultation to discuss your needs, goals, and the best options for your business.",
+      "It’s easy! Just reach out through our contact page or email us, and we’ll arrange a consultation to discuss your project and goals.",
   },
 ];
 
 export const ABOUTFEATURES1 = [
-  "Lorem ipsum dolor sit amet",
-  "Lorem ipsum dolor sit amet",
-  "Lorem ipsum dolor sit amet",
+  "Increases online visibility",
+  "Builds client trust",
+  "Showcases your services",
 ];
+
 export const ABOUTFEATURES2 = [
-  "Lorem ipsum dolor sit amet",
-  "Lorem ipsum dolor sit amet",
-  "Lorem ipsum dolor sit amet",
+  "Attracts more customers",
+  "Accessible 24/7",
+  "Enhances brand image",
 ];
 
 export const SPECIALSECTION = [

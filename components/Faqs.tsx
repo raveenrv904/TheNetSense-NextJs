@@ -18,10 +18,11 @@ const Faqs = () => {
         {FAQS.map((item, index) => {
           return (
             <Accordion key={index} className="" type="single" collapsible>
-              <AccordionItem className="" value={`${index}`}>
-                <div className="mt-3 text-sm md:text-base">
-                  <AccordionTrigger>{item.question}</AccordionTrigger>
-                </div>
+              <AccordionItem
+                className="mt-3 text-sm md:text-base"
+                value={`${index}`}
+              >
+                <AccordionTrigger>{item.question}</AccordionTrigger>
                 <div className="">
                   <AccordionContent className="px-5 text-justify  shadow-custom">
                     {item.answer}

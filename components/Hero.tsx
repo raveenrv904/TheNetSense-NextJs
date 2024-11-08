@@ -11,7 +11,7 @@ const Hero = () => {
     <>
       <Navbar />
       <header className="flex flex-col justify-center my-10 px-4 sm:px-6 md:px-8">
-        <div className="flex flex-col-reverse lg:flex-row my-6 md:my-12 lg:my-20 items-center justify-center max-w-6xl mx-auto">
+        <div className="flex flex-col-reverse lg:flex-row my-6 md:my-12 lg:my-20 items-center justify-center max-w-[86rem] mx-auto">
           {/* Text Content */}
           <div className="flex-1 space-y-5 text-center lg:text-left mb-8 lg:mb-0">
             <div className="text-base sm:text-lg w-fit flex items-center px-3 sm:px-4 lg:px-5 cursor-pointer py-1 rounded-full gap-2 bg-secondary mx-auto lg:mx-0">
@@ -22,16 +22,17 @@ const Hero = () => {
             </div>
 
             <div className="text-3xl sm:text-4xl md:text-5xl lg:text-[60px] leading-tight font-semibold">
-              <h3>Maecenas Vitae</h3>
-              <h3>Consectetur Led</h3>
-              <h3 className="text-primary">Vestibulum Ante</h3>
+              <h3>Custom Websites</h3>
+              <h3>For Business Growth</h3>
+              <h3 className="text-primary">with TheNetSense</h3>
             </div>
 
             <div>
               <p className="font-medium text-gray-600 text-center lg:text-left text-sm sm:text-base md:text-lg lg:text-xl">
-                Nullam quis ante. Etiam sit amet orci eget eros faucibus
-                tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec
-                sodales sagittis magna.
+                At TheNetSense, we craft unique, high-converting websites
+                designed to elevate your brand, boost engagement, and drive
+                measurable growth. Let’s create an online presence that makes an
+                impact.
               </p>
             </div>
 
@@ -40,13 +41,13 @@ const Hero = () => {
                 href={"/#about-us"}
                 className="bg-primary text-white px-4 sm:px-5 py-2 sm:py-3 font-semibold tracking-wide rounded-full hover:border hover:bg-white hover:text-primary hover:border-primary transition-all duration-200 ease-in-out"
               >
-                Get Started
+                Discover More
               </Link>
               <Link
                 href={"/#contact-us"}
                 className="border border-primary text-primary px-4 sm:px-5 py-2 sm:py-3 font-semibold tracking-wide rounded-full bg-white hover:bg-primary hover:text-white transition-all duration-200 ease-in-out"
               >
-                Contact Us
+                Get In Touch
               </Link>
             </div>
           </div>
@@ -57,7 +58,7 @@ const Hero = () => {
               src={HeroLogo}
               width={500}
               height={300}
-              alt="Hero main image"
+              alt="TheNetSense Hero Image"
               className="w-full max-w-[350px] sm:max-w-[350px] md:max-w-[450px] lg:max-w-[650px] object-contain"
             />
           </div>

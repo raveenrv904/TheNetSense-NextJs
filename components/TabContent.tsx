@@ -6,6 +6,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Link from "next/link";
 
+import FreeIcon from "./assets/free.png";
+
 type Props = {
   title: string;
   desc: string;
@@ -70,9 +72,19 @@ const TabContent = ({
             {features.map((item, index) => (
               <div key={index} className="flex gap-3 items-center">
                 <CircleCheckBig size={25} color="#e03a3c" strokeWidth={3} />
-                <p className="text-black text-xs md:text-sm lg:text-base font-semibold">
-                  {item.feature}
-                </p>
+                <div className="text-black text-xs md:text-sm lg:text-base font-semibold flex items-center gap-1">
+                  <p>{item.feature}</p>
+
+                  {index !== 0 && title !== "Other Enquiries" && (
+                    <Image
+                      src={FreeIcon}
+                      width={12}
+                      height={12}
+                      alt="free icon"
+                      className="w-7 h-5"
+                    />
+                  )}
+                </div>
               </div>
             ))}
           </div>

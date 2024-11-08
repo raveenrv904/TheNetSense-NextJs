@@ -1,5 +1,5 @@
 import { ABOUTFEATURES1, ABOUTFEATURES2 } from "@/constants/index.constants";
-import { CircleCheck, CircleUser, Phone } from "lucide-react";
+import { CircleCheck, Phone } from "lucide-react";
 import React from "react";
 
 import AboutMain from "./assets/about-main.png";
@@ -7,21 +7,23 @@ import AboutSec from "./assets/about sec.png";
 
 import Image from "next/image";
 
+import Profile from "./assets/profile.jpg";
+
 const About = () => {
   return (
     <section className="w-full flex flex-col-reverse lg:flex-row justify-center items-center px-4 py-10 md:px-8 lg:px-12 space-y-10 lg:space-y-0 lg:space-x-6 h-auto my-10 mt-0">
       <div className="space-y-5 lg:flex-1 text-center lg:text-left lg:ml-20">
-        <h2 className="uppercase  text-[23px] text-primary font-semibold lg:text-2xl">
+        <h2 className="uppercase text-[23px] text-primary font-semibold lg:text-2xl">
           More About Us
         </h2>
         <h3 className="capitalize font-semibold text-[31px] tracking-wider">
-          Voluptas enim suscipit temporibus
+          Your Digital Growth Partner
         </h3>
-        <p className="capitalize font-light text-base tracking-wide">
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
-          ab illo inventore veritatis et quasi architecto beatae vitae dicta
-          sunt explicabo.
+        <p className="font-light text-base tracking-wide">
+          At TheNetSense, we’re dedicated to helping businesses succeed online.
+          Our team specializes in creating customized websites that not only
+          look great but also help you reach your goals. We’re here to make your
+          digital presence shine.
         </p>
         <div className="my-7 flex flex-col md:flex-row gap-5 justify-center lg:justify-start">
           <div className="space-y-2">
@@ -49,7 +51,14 @@ const About = () => {
         </div>
         <div className="flex flex-col md:flex-row gap-10 items-center justify-center lg:justify-start">
           <div className="flex items-center gap-2">
-            <CircleUser className="text-primary w-12 h-12" />
+            {/* <CircleUser className="text-primary w-12 h-12" /> */}
+            <Image
+              src={Profile}
+              width={100}
+              height={100}
+              alt="Founder Profile"
+              className="w-12 h-12 rounded-full shadow-customTabsTitle"
+            />
             <div>
               <h4 className="text-lg text-black font-medium">Raveen R V</h4>
               <p className="text-primary text-sm">CEO & Founder</p>
