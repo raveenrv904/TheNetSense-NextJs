@@ -8,7 +8,7 @@ import NavbarSlider from "./NavbarSlider";
 
 const Navbar = () => {
   return (
-    <nav className="flex flex-wrap justify-between items-center shadow-customTabs mt-5 mx-5 md:mx-10 px-4 md:px-5 py-3 cursor-pointer rounded-full">
+    <nav className="flex mt-5  flex-wrap justify-between items-center shadow-customTabs  mx-5 md:mx-10 px-4 md:px-5 py-3 cursor-pointer rounded-full">
       {/* Logo */}
       <div className="ml-5 md:ml-10 flex-shrink-0">
         <Link href={"/"}>

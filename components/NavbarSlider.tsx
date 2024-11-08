@@ -34,7 +34,7 @@ const NavbarSlider = () => {
               />
             </SheetTitle>
             <SheetDescription>
-              <div className="flex flex-col gap-3 text-xl mt-6">
+              <div className="flex flex-col gap-3 text-xl mt-6 text-left">
                 {NAVLINKS.map((item, index) => (
                   <Link
                     href={item.link}
