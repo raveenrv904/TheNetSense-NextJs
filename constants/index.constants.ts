@@ -36,8 +36,8 @@ export const USEFULLINKS = [
     link: "/#faqs",
   },
   {
-    label: "Terms Of Services",
-    link: "/terms-of-services",
+    label: "Terms & Conditions",
+    link: "/terms-and-condition",
   },
   {
     label: "Privacy Policy",
