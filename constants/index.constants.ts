@@ -153,6 +153,10 @@ export const NAVLINKS = [
     link: "/#faqs",
   },
   {
+    title: "Projects",
+    link: "/#projects"
+  },
+  {
     title: "Contact Us",
     link: "/#contact",
   },
