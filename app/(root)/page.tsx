@@ -3,6 +3,7 @@ import Contact from "@/components/Contact";
 import Faqs from "@/components/Faqs";
 import Hero from "@/components/Hero";
 import OnBoard from "@/components/OnBoard";
+import Projeccts from "@/components/Projeccts";
 import Service from "@/components/Service";
 import Special from "@/components/Special";
 import React from "react";
@@ -16,6 +17,7 @@ const Home = () => {
       <Service />
       <Faqs />
       <OnBoard />
+      <Projeccts/>
       <Contact />
     </>
   );

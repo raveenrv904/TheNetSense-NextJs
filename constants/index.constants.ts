@@ -157,3 +157,57 @@ export const NAVLINKS = [
     link: "/#contact",
   },
 ];
+
+export const PROJECTS = [
+  {
+    id: "project-1",
+    title: "",
+    techStack: [{
+      frontend: ["Figma", "Next Js", "Tailwind Css", "Framer Motion"],
+      backend: null,
+      database: null,
+      deployment: "Netlify"
+    }],
+    category: "Portfolio",
+    webLink: "https://ashik-jenly.netlify.app",
+    image:"/assets/projects/ashik.png"
+  },{
+    id: "project-2",
+    title: "",
+    techStack: [{
+      frontend: ["Figma", "Next Js", "Tailwind Css", "Framer Motion"],
+      backend: null,
+      database:null,
+      deployment: "Netlify"
+    }],
+    category: "Startup",
+    webLink: "https://healgreen.netlify.app",
+    image:"/assets/projects/healgreen.png"
+  },
+  {
+    id: "project-3",
+    title: "",
+    techStack: [{
+      frontend: ["HTML", "CSS", "JavaScript", "BootStrap", "JQuery"],
+      backend: null,
+      database: null,
+      deployment: "Netlify"
+    }],
+    category: "Portfolio",
+    webLink: "https://stemiansrobohub.netlify.app",
+    image:"/assets/projects/stemians.png"
+  },
+  {
+    id: "project-4",
+    title: "",
+    techStack: [{
+      frontend: ["React JS", "Tailwind Css", "Framer Motion"],
+      backend: ["Sanity Studio"],
+      database: ["Supabase", "Sanity Database"],
+      deployment: "Vercel"
+    }],
+    category: "E-Commerce",
+    webLink: "https://zoyeelifestyle.in",
+    image:"/assets/projects/zoyee.png"
+},
+]
