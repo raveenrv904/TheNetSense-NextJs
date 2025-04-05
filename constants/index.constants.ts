@@ -163,20 +163,21 @@ export const NAVLINKS = [
 ];
 
 export const PROJECTS = [
+  // {
+  //   id: "project-1",
+  //   title: "",
+  //   techStack: [{
+  //     frontend: ["Figma", "Next Js", "Tailwind Css", "Framer Motion"],
+  //     backend: null,
+  //     database: null,
+  //     deployment: "Netlify"
+  //   }],
+  //   category: "Portfolio",
+  //   webLink: "https://ashik-jenly.netlify.app",
+  //   image:"/assets/projects/ashik.png"
+  // },
   {
     id: "project-1",
-    title: "",
-    techStack: [{
-      frontend: ["Figma", "Next Js", "Tailwind Css", "Framer Motion"],
-      backend: null,
-      database: null,
-      deployment: "Netlify"
-    }],
-    category: "Portfolio",
-    webLink: "https://ashik-jenly.netlify.app",
-    image:"/assets/projects/ashik.png"
-  },{
-    id: "project-2",
     title: "",
     techStack: [{
       frontend: ["Figma", "Next Js", "Tailwind Css", "Framer Motion"],
@@ -189,7 +190,7 @@ export const PROJECTS = [
     image:"/assets/projects/healgreen.png"
   },
   {
-    id: "project-3",
+    id: "project-2",
     title: "",
     techStack: [{
       frontend: ["HTML", "CSS", "JavaScript", "BootStrap", "JQuery"],
@@ -202,7 +203,7 @@ export const PROJECTS = [
     image:"/assets/projects/stemians.png"
   },
   {
-    id: "project-4",
+    id: "project-3",
     title: "",
     techStack: [{
       frontend: ["React JS", "Tailwind Css", "Framer Motion"],
