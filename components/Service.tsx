@@ -4,7 +4,6 @@ import TitleSection from "./TitleSection";
 import { Tabs } from "./ui/tabs";
 import TabContent from "./TabContent";
 
-import PrisingPoster from "./assets/price.png";
 
 import { motion, useInView } from "framer-motion";
 
@@ -61,7 +60,6 @@ export const tabs = [
               feature: "6 Month Technical Support",
             },
           ]}
-          pricing={PrisingPoster}
           link="https://forms.gle/CDMuhzhC43F468Fs7"
           title="Web Development"
           desc="Our web development services are designed to create custom, high-performance websites that match your brand and goals. From integrated SEO to advanced analytics, we build sites that not only look great but also drive results and engage your audience."
@@ -112,7 +110,6 @@ export const tabs = [
               feature: "6 Month Technical Support",
             },
           ]}
-          pricing={PrisingPoster}
           link="https://forms.gle/CDMuhzhC43F468Fs7"
           title="App Development"
           desc="Our app development services bring your ideas to life with custom, user-friendly mobile applications. We design and build apps that enhance customer engagement, streamline your business processes, and support your digital growth. From concept to launch, we’re here to make sure your app performs seamlessly."
@@ -160,7 +157,6 @@ export const tabs = [
               feature: "Custom Enhancements and Features",
             },
           ]}
-          pricing={PrisingPoster}
           link="https://forms.gle/CDMuhzhC43F468Fs7"
           title="Other Enquiries"
           desc="Need assistance with technical issues or updates? We’re here to help! Whether it’s resolving bugs, optimizing performance, or adding new features, our team offers reliable support to keep your digital assets running smoothly and efficiently."
