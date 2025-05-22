@@ -12,7 +12,6 @@ type Props = {
   title: string;
   desc: string;
   features: Array<{ key: string; feature: string }>;
-  pricing: StaticImageData;
   posters: Array<{ link: StaticImageData }>;
   link: string;
 };
@@ -21,7 +20,6 @@ const TabContent = ({
   title,
   desc,
   features,
-  pricing,
   posters,
   link,
 }: Props) => {
@@ -89,16 +87,7 @@ const TabContent = ({
             ))}
           </div>
 
-          {title !== "Other Enquiries" && (
-            <Image
-              className="w-64 -mt-8 lg:-mt-32 hidden md:block lg:hidden"
-              src={pricing}
-              width={100}
-              height={100}
-              alt="pricing"
-              priority
-            />
-          )}
+
         </div>
 
         <div
@@ -112,16 +101,7 @@ const TabContent = ({
             </button>
           </Link>
 
-          {title !== "Other Enquiries" && (
-            <Image
-              className="w-64 -mt-8 lg:-mt-28 md:hidden lg:block"
-              src={pricing}
-              width={100}
-              height={100}
-              alt="pricing"
-              priority
-            />
-          )}
+
         </div>
       </div>
       <div className="hidden lg:flex justify-center items-center h-full">
