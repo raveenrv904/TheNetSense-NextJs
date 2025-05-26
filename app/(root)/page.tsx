@@ -6,6 +6,7 @@ import OnBoard from "@/components/OnBoard";
 import Projeccts from "@/components/Projeccts";
 import Service from "@/components/Service";
 import Special from "@/components/Special";
+import Team from "@/components/Team";
 import React from "react";
 
 const Home = () => {
@@ -17,7 +18,8 @@ const Home = () => {
       <Service />
       <Faqs />
       <OnBoard />
-      <Projeccts/>
+      <Projeccts />
+      <Team />
       <Contact />
     </>
   );

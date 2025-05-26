@@ -119,7 +119,7 @@ export const ABOUTFEATURES2 = [
 export const SPECIALSECTION = [
   {
     Icon: User,
-    count: 7,
+    count: 10,
     title: "Happy Client",
   },
   {
@@ -154,7 +154,7 @@ export const NAVLINKS = [
   },
   {
     title: "Projects",
-    link: "/#projects"
+    link: "/#projects",
   },
   {
     title: "Contact Us",
@@ -163,56 +163,79 @@ export const NAVLINKS = [
 ];
 
 export const PROJECTS = [
-  // {
-  //   id: "project-1",
-  //   title: "",
-  //   techStack: [{
-  //     frontend: ["Figma", "Next Js", "Tailwind Css", "Framer Motion"],
-  //     backend: null,
-  //     database: null,
-  //     deployment: "Netlify"
-  //   }],
-  //   category: "Portfolio",
-  //   webLink: "https://ashik-jenly.netlify.app",
-  //   image:"/assets/projects/ashik.png"
-  // },
   {
     id: "project-1",
     title: "",
-    techStack: [{
-      frontend: ["Figma", "Next Js", "Tailwind Css", "Framer Motion"],
-      backend: null,
-      database:null,
-      deployment: "Netlify"
-    }],
+    techStack: [
+      {
+        frontend: ["Figma", "Next Js", "Tailwind Css", "Framer Motion"],
+        backend: null,
+        database: null,
+        deployment: "Netlify",
+      },
+    ],
     category: "Startup",
     webLink: "https://healgreen.netlify.app",
-    image:"/assets/projects/healgreen.png"
+    image: "/assets/projects/healgreen.png",
   },
   {
     id: "project-2",
     title: "",
-    techStack: [{
-      frontend: ["HTML", "CSS", "JavaScript", "BootStrap", "JQuery"],
-      backend: null,
-      database: null,
-      deployment: "Netlify"
-    }],
+    techStack: [
+      {
+        frontend: ["HTML", "CSS", "JavaScript", "BootStrap", "JQuery"],
+        backend: null,
+        database: null,
+        deployment: "Netlify",
+      },
+    ],
     category: "Portfolio",
     webLink: "https://stemiansrobohub.netlify.app",
-    image:"/assets/projects/stemians.png"
+    image: "/assets/projects/stemians.png",
   },
   {
     id: "project-3",
     title: "",
-    techStack: [{
-      frontend: ["React JS", "Tailwind Css", "Framer Motion"],
-      backend: ["Sanity Studio"],
-      database: ["Supabase", "Sanity Database"],
-      deployment: "Vercel"
-    }],
+    techStack: [
+      {
+        frontend: ["React JS", "Tailwind Css", "Framer Motion"],
+        backend: ["Sanity Studio"],
+        database: ["Supabase", "Sanity Database"],
+        deployment: "Vercel",
+      },
+    ],
     category: "E-Commerce",
     webLink: "https://zoyeelifestyle.in",
-    image:"/assets/projects/zoyee.png"
-},
-]
+    image: "/assets/projects/zoyee.png",
+  },
+  {
+    id: "project-4",
+    title: "",
+    techStack: [
+      {
+        frontend: ["Figma", "Next Js", "Tailwind Css", "Framer Motion"],
+        backend: null,
+        database: null,
+        deployment: "Netlify",
+      },
+    ],
+    category: "Portfolio",
+    webLink: "https://ashik-jenly.netlify.app",
+    image: "/assets/projects/ashik.png",
+  },
+  {
+    id: "project-5",
+    title: "",
+    techStack: [
+      {
+        frontend: ["Figma", "React JS", "Tailwind Css", "Framer Motion"],
+        backend: null,
+        database: null,
+        deployment: "Vercel",
+      },
+    ],
+    category: "Agency",
+    webLink: "https://edutechfuse.vercel.app",
+    image: "/assets/projects/edutechfuse.png",
+  },
+];
