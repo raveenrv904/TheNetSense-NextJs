@@ -6,7 +6,6 @@ import React from "react";
 import AboutMain from "./assets/about-main.png";
 import AboutSec from "./assets/about sec.png";
 import Image from "next/image";
-import Profile from "./assets/profile.jpg";
 import { motion, useInView } from "framer-motion";
 
 const About = () => {
@@ -58,7 +57,7 @@ const About = () => {
 
         {/* Contact Information */}
         <div className="flex flex-col md:flex-row gap-10 items-center justify-center lg:justify-start">
-          <div className="flex items-center gap-2">
+          {/* <div className="flex items-center gap-2">
             <Image
               src={Profile}
               width={100}
@@ -71,7 +70,7 @@ const About = () => {
               <h4 className="text-lg text-black font-medium">Raveen R V</h4>
               <p className="text-primary text-sm">CEO & Founder</p>
             </div>
-          </div>
+          </div> */}
           <div className="flex items-center gap-3 px-5 py-2 rounded-[5px] shadow-lg">
             <Phone fill="#e03a3c" className="text-primary w-7 h-7" />
             <div>
