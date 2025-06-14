@@ -179,6 +179,22 @@ export const PROJECTS = [
     image: "/assets/projects/healgreen.png",
   },
   {
+    id: "project-6",
+    title: "",
+    techStack: [
+      {
+        frontend: ["Figma", "Next Js", "Tailwind Css", "Framer Motion"],
+        backend: null,
+        database: null,
+        deployment: "Netlify",
+      },
+    ],
+    category: "Business",
+    webLink: "https://overseasaircourierservice.in",
+    image: "/assets/projects/overseasaircourierservice.png",
+  },
+
+  {
     id: "project-2",
     title: "",
     techStack: [
