@@ -23,7 +23,7 @@ const Footer = () => {
         <div className="mt-4">
           <div className="text-sm lg:text-base space-y-2">
             <p className="font-bold">
-              Email: <span className="font-medium">{process.env.EMAIL}</span>
+              Email: <span className="font-medium">raveenrv.in@gmail.com</span>
             </p>
             <p className="font-bold">
               Phone:{" "}
